@@ -7,7 +7,7 @@ console.log(numbers);
 console.log(evenNumbers);
 console.log(greaterThanFiveNumbers);
 
-// reduce() executes a function over each element of the array "accumulating" the result to reduce the array to a single value or object
+// reduce() executes a function over each element of the array "accumulating" the result to reduce the array to a single value or object.
 const sum = numbers.reduce((sum, num) => (sum += num), 0);
 console.log(sum);
 
