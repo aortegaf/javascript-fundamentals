@@ -21,13 +21,13 @@ console.log(arrowGreetingExplicit("Batman"));
 console.log(arrowGreetingImplicit("Batman"));
 console.log(arrowGreetingImplicitMultipleParam("Bruce", "Wayne"));
 
-//Lexical binding
+// Lexical binding
 const fictionalCharacter = {
   name: "Uncle Ben",
   traditionalMessage: function (message) {
     console.log(`${this.name} says: ${message}`);
   },
-  arrowMessage: (message) => console.log(`${this.name} says: ${message}`),
+  arrowMessage: (message) => console.log(`${this.name} says: ${message}`), // "this" is not available in arrow functions
 };
 
 fictionalCharacter.traditionalMessage(
