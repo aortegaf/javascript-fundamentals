@@ -3,11 +3,11 @@ function fetchDataWithPromise() {
     .then((response) => response.json())
     .then((data) =>
       console.log(
-        `Respuesta exitosa con Promise. ${data.results.length} resultados disponibles.`
+        `(Promise) Success. ${data.results.length} results available.`
       )
     )
     .catch((error) => {
-      console.log("Respuesta fallida con Promise.");
+      console.log("(Promise) Failed.");
       console.log(error);
     });
 }
@@ -17,10 +17,10 @@ async function fetchDataWithAsyncAwait() {
     let response = await fetch("https://rickandmortyapi.com/api/character");
     let data = await response.json();
     console.log(
-      `Respuesta exitosa con async-await. ${data.results.length} resultados disponibles.`
+      `(async-await) Success. ${data.results.length} results available.`
     );
   } catch (error) {
-    console.log("Respuesta fallida con async-await.");
+    console.log("(async-await) Failed.");
     console.log(error);
   }
 }
