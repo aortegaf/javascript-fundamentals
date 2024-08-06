@@ -48,7 +48,6 @@ const usersTimeline = [
 
 const timelineContainer = document.getElementById("timeLine");
 
-// Create HTML content for each timeline entry and append it
 usersTimeline.forEach((timeline) => {
   timelineContainer.innerHTML += `<span style="font-weight: bold">${timeline.user}</span>: ${timeline.timeline} <br> <br>`;
 });
