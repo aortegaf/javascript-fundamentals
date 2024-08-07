@@ -26,7 +26,7 @@ async function getRequest() {
   try {
     const response = await makeHTTPRequest(
       "GET",
-      "https://jsonplaceholder.typicode.com/Posts"
+      "https://jsonplaceholder.typicode.com/posts"
     );
     return response.data;
   } catch (error) {
