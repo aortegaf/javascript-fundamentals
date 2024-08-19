@@ -9,9 +9,7 @@ const arrowGreetingExplicit = (name) => {
 };
 
 // Arrow function, implicit return
-const arrowGreetingImplicit = (name) => {
-  return `Hi ${name}`;
-};
+const arrowGreetingImplicit = (name) => `Hi ${name}`;
 const arrowGreetingImplicitMultipleParam = (name, lastName) => {
   return `Hi ${name} ${lastName}`;
 };
